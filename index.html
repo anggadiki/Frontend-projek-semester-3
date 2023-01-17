@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanjung Papuma With me</title>
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-image: url("aset/8.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: popins;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        li {
+            display: inline;
+            float: left;
+        }
+
+        a {
+            display: block;
+            padding: 15px;
+            /* background-color: #3D5656; */
+        }
+
+        .bar {
+            list-style-type: none;
+            width: 120%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .bar li {
+            float: left;
+        }
+
+        .bar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            transition: color .5s;
+        }
+
+        /* Change the link on hover */
+        .bar li a:hover {
+            background-color: #678983;
+            border-radius: 10px;
+        }
+
+        section {
+            text-align: center;
+            justify-content: center;
+            color: white;
+            padding: 180px;
+            font-size: 30px;
+        }
+
+        .start h1 {
+            padding-top: 100px;
+            text-transform: capitalize;
+        }
+
+        button {
+            font-size: 25px;
+            font-family: monsentrat;
+            border: 0;
+            background: none;
+            border: 2px solid #678983;
+            color: white;
+            border-radius: 24px;
+            transition: 0.25s;
+            padding: 1.5px 40px;
+            cursor: pointer;
+        }
+
+        .button a {
+            text-decoration: none;
+            list-style-type: none;
+
+        }
+
+        button:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            background: #678983;
+            height: 30vw;
+            width: 100vw;
+            font-family: sans-serif;
+            padding-top: 280px;
+            color: white;
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+
+        }
+
+        .footer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            line-height: 3rem;
+        }
+
+        .footer-button {
+            background: #678983;
+            /* width: 100vw; */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-button p {
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+
+        .footer span {
+            text-transform: uppercase;
+            opacity: .4;
+            font-weight: 200;
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            bottom: 18px;
+            right: 20px;
+            width: 75px;
+            height: 75px;
+            background: none;
+            border-radius: 100%;
+            border: 1px solid #678983;
+            color: white;
+            transition: 0.25s;
+            padding: 1.5px 2px;
+        }
+    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigasi bar -->
+    <div class=" navigasi-bar">
+        <ul class="bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#Contact">Contact</a></a></li>
+        </ul>
+    </div>
+    <section id="Home">
+        <div class="start">
+            <h1 style="color: #3DDAD7;"><strong> Tanjung Papuma</strong></h1>
+            <p>Tanjung papuma adalah salah satu destinasi wisata pantai pasir putih yang terkenal di kawasan jember</p>
+            <br>
+        </div>
+        <div class="button">
+            <button class="tombol"><a href="/masuk/" style="color: white;">Masuk</a></button><br><br><br><br><br>
+        </div>
+    </section>
+    <footer id="Contact">
+        <div class="footer-content">
+            <h1 data-aos="fade-down" data-aos-duration="6s" style="color: #3DDAD7;">Hubungi Kami</h1>
+            <p data-aos="fade-right" data-aos-duration="6s">Website Ini Di Buat Untuk Menuhi Tugas Mata Kuliah
+                Pengembangan Aplikasi Web</p>
+            <div class="png" style="display: flex;" data-aos="flip-down" data-aos-duration="4s">
+                <a href="https://www.instagram.com/saputraanggadiki/"><img src="/aset/instagram.png" width="30px"
+                        height="30px"></a>
+                <a href="https://www.linkedin.com/in/angga-diki-saputra-a27a29259/"><img src="/aset/linkedin.png"
+                        width="30px" height="30px"></a>
+            </div>
+        </div>
+        <div class="footer-button" data-aos="flip-up" data-aos-duration="5s">
+            <p data-aos="fade-up" data-aos-duration="4s">copyright &copy;2022. Desain bye <span
+                    style="color: red;">Angga Diki Saputra</span></p>
+        </div>
+    </footer>
+    <div class="top" onclick="gototop()">👆🏽</div>
+    <script>
+        const gototop = () => {
+            return location.href = "#Home"
+        }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
